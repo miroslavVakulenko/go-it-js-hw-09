@@ -89,4 +89,4 @@ function createMarkup(images) {
 
 gallery.insertAdjacentHTML('beforeend', createMarkup(images));
 
-new SimpleLightbox('.gallery a');
+const gallerySimple = new SimpleLightbox('.gallery a');

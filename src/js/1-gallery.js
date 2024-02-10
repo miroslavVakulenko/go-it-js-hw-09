@@ -80,6 +80,8 @@ function createMarkup(images) {
       class="gallery-image"
       src="${preview}"
       alt="${description}"
+      width=360
+      height=200
     />
   </a>
 </li>`
@@ -89,4 +91,7 @@ function createMarkup(images) {
 
 gallery.insertAdjacentHTML('beforeend', createMarkup(images));
 
-const gallerySimple = new SimpleLightbox('.gallery a');
+const gallerySimple = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});

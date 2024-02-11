@@ -1,42 +1,96 @@
 .feedback-form{
 display: flex;
 flex-direction: column;
-gap: 8px;
+gap: 0.5rem;
 }
+
+label{
+  color: rgb(46, 47, 66);
+  font-family: Montserrat;
+  
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  letter-spacing: 0.04rem;
+}
+
 input[name="email"] {
-  width: 360px;
-  height: 40px;
+  width: 22.5rem;
+  height: 2.5rem;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[name="email"]:focus{
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  outline-offset: 0.25rem;
+  outline-color: transparent;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  box-sizing: border-box;
 }
 
 textarea[name="message"]{
-  width: 360px;
-  height: 80px;
+  width: 22.5rem;
+  height: 5rem;
+  resize: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 0.25rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+textarea[name="message"]:focus{
+  
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.25rem;
+  outline-offset: 0.25rem;
+  outline-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
 
 button[type="submit"]{
   /* Submit */
-    position: static;
-    width: 63px;
-    height: 24px;
-    /* Auto layout */
-    display: flex;
-    border: none;
-    justify-content: center;
-    align-items: center;
-  
-  
-   
-    margin-top: 8px;
-    border-radius: 8px;
-    
-    background: rgb(78, 117, 255);
+  position: static;
+  width: 6rem;
+  height: 2.5rem;
+  /* Auto layout */
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
 
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-   
+
+  
+  margin-top: 8px;
+  border-radius: 8px;
+  
+  background: rgb(78, 117, 255);
+
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  letter-spacing: 0.08rem;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button[type="submit"]:hover{
+  background-color: rgb(108, 140, 255);
 }
 
 form label{
